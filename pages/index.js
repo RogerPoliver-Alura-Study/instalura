@@ -1,22 +1,19 @@
-import styled from 'styled-components'
+import styled from "styled-components";
+import Menu from '../src/components/commons/Menu'
+
+const colorText = "red";
 
 const Title = styled.h1`
   font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
-
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-
-`
+  color: ${colorText};
+`;
 
 export default function Home() {
   return (
-    <Container>
-      <Title>Instalura</Title>
-    </Container>
-  )
+    <div>
+      <Menu>
+        <Title>InstAlura</Title>
+      </Menu>
+    </div>
+  );
 }
