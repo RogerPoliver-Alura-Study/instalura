@@ -1,19 +1,20 @@
-import { Logo } from "../../../theme/Logo";
-import { MenuWrapper } from "./styles/MenuWrapper";
+import { Logo } from '../../../theme/Logo';
+import { MenuWrapper } from './styles/MenuWrapper';
+import { Button } from '../Button';
 
 export default function Menu() {
   const links = [
     {
-      text: "Home",
-      url: "/",
+      text: 'Home',
+      url: '/',
     },
     {
-      text: "FAQ",
-      url: "/faq",
+      text: 'FAQ',
+      url: '/faq',
     },
     {
-      text: "About",
-      url: "/about",
+      text: 'About',
+      url: '/about',
     },
   ];
 
@@ -23,7 +24,7 @@ export default function Menu() {
         <Logo />
       </MenuWrapper.LeftSide>
       <MenuWrapper.CentralSide>
-        {links.map((links) => {
+        {links.map(links => {
           return (
             <li>
               <a href={links.url}>{links.text}</a>
@@ -32,8 +33,12 @@ export default function Menu() {
         })}
       </MenuWrapper.CentralSide>
       <MenuWrapper.RightSide>
-        <button>Entrar</button>
-        <button>Sair</button>
+        <Button type="button" ghost variant="secondary.main">
+          Entrar
+        </Button>
+        <Button type="button" variant="primary.main">
+          Cadastrar
+        </Button>
       </MenuWrapper.RightSide>
     </MenuWrapper>
   );

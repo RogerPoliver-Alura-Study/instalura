@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import Menu from '../src/components/commons/Menu'
+import styled from 'styled-components';
+import Menu from '../src/components/commons/Menu';
 
-const colorText = "red";
+const colorText = 'red';
 
 const Title = styled.h1`
   font-size: 50px;
