@@ -26,7 +26,7 @@ export default function Menu() {
       <MenuWrapper.CentralSide>
         {links.map(links => {
           return (
-            <li>
+            <li key={links.url}>
               <a href={links.url}>{links.text}</a>
             </li>
           );
