@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import TextStyleVariantsMap from '../../../theme/foundation/Text';
 import get from 'lodash/get';
 
 export const Button = styled.button`
@@ -8,6 +9,7 @@ export const Button = styled.button`
   font-weight: bold;
   opacity: 1;
   border-radius: 8px;
+  ${TextStyleVariantsMap.smallestException}
   ${function (props) {
     return props.ghost ? ButtonGhost : ButtonDefault;
   }}

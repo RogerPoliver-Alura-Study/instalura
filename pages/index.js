@@ -1,19 +1,19 @@
-import styled from 'styled-components';
 import Menu from '../src/components/commons/Menu';
-
-const colorText = 'red';
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${colorText};
-`;
+import Footer from '../src/components/commons/Footer';
 
 export default function Home() {
   return (
-    <div>
-      <Menu>
-        <Title>InstAlura</Title>
-      </Menu>
+    <div
+      style={{
+        flex: '1',
+        display: 'flex',
+        flexWrap: 'wrap',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+      }}
+    >
+      <Menu />
+      <Footer />
     </div>
   );
 }
