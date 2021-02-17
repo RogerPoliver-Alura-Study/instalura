@@ -1,7 +1,8 @@
+import React from 'react';
 import { Logo } from '../../../theme/Logo';
-import { MenuWrapper } from './styles/MenuWrapper';
+import { Text } from '../../foundation/Text';
 import { Button } from '../Button';
-import Text from '../../../theme/foundation/Text';
+import { MenuWrapper } from './styles/MenuWrapper';
 
 export default function Menu() {
   const links = [
